@@ -39,7 +39,7 @@ class EmployeeController extends Controller
             'name' => 'required|string|max:80',
             'age' => 'required|int|max:80',
             'job' => 'required|string|max:80',
-            'salary' => 'required|string|max:80'
+            'salary' => 'required|int|max:10000'
         ]);
 
         if($validator->fails()){
