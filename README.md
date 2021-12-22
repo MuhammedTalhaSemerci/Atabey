@@ -8,6 +8,8 @@ Authentication benim araştırdığım kadarı ile 2 konsept ile gerçekleştiri
 
 Authentication ister get metodunda "/api/employee?api_token=d6vrU3fcTRN7hMT7BnD8oPbiEs1wJndKkTOGzdgrnbDeIbcvTQY9YnhVMejm" gibi yapılabilecekken istersekte header olarak gönderilebiliyor, "Accept" header'ı "application/json" olarak tanımlanır ve Authentication header'ı da "Bearer d6vrU3fcTRN7hMT7BnD8oPbiEs1wJndKkTOGzdgrnbDeIbcvTQY9YnhVMejm" gibi tanımlanır. Böylelikle auth. gerçekleşmiş olur.
 
+Yeni bir key üretmek için ``` php artisan make:token ``` komutunu kullanabiliriz.
+
 ## Get(index) metodu ve URL Yapısı:
 
 Bu metot ile istenirse tüm verilere toplu olarak istenirse de sadece 1 indis'e ulaşılabilir:
