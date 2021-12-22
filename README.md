@@ -1,6 +1,6 @@
 ## RestApi Hakkında Genel Bilgiler:
 
-Request başlangıçta Route'a iletilir, sonrasında api_token ile authentication yapılır. Bağlantı controller'a iletilir ve ilgili controllerdaki metotlar requestin metot'una bağlı olarak ilgili fonksiyonları tetikler (get => index, post => show, put => update, delete => destroy).
+Request başlangıçta Route'a iletilir, sonrasında api_token ile authentication yapılır. Bağlantı controller'a iletilir ve ilgili controllerdaki metotlar requestin metot'una bağlı olarak ilgili fonksiyonları tetikler (get => index, post => store, put => update, delete => destroy).
 
 ## Authentication
 
@@ -15,7 +15,7 @@ Bu metot ile istenirse tüm verilere toplu olarak istenirse de sadece 1 indis'e 
 Tüm veriler için "/api/employee" şeklinde yazarak ulaşabiliriz.
 Bir veri için ise "/api/employee/15" gibi yazarak 15. indise erişmiş oluyoruz.
 
-## Post(Show) metodu ve URL Yapısı:
+## Post(store) metodu ve URL Yapısı:
 
 Veriler Requestin body'si içerinde "x-www-form-urlencoded" biçiminde "/api/employee" urlsine iletilir. 4 veri iletilmeli bunlar şu şekilde; name(80,string), age(80,int), salary(10000,int), job(80,string)
 
