@@ -4,7 +4,7 @@ Request başlangıçta Route'a iletilir, sonrasında api_token ile authenticatio
 
 ## Authentication
 
-Authentication benim araştırdığım kadarı ile 2 konsept ile gerçekleştirilebiliyor. 1. yöntemde "passport" ismi verilen bir yol izleniyor. İlk olarak normal bir kullanıcı giriş yapar gibi api aracılığıyla bir token üretiliyor, ve bu token ile aşağıda anlattığım işlemler yapılıyor. Yada 2. yol ile herhangi bir giriş yapılamksızın önceden edinilmiş bir api key ile sisteme erişilinebiliyor. Bu api örneği 2. yöntemi kullanarak çalışıyor.
+Authentication benim araştırdığım kadarı ile 2 konsept ile gerçekleştirilebiliyor. 1. yöntemde "passport" ismi verilen bir yol izleniyor. İlk olarak normal bir kullanıcı giriş yapar gibi api aracılığıyla bir token üretiliyor, ve bu token ile aşağıda anlattığım işlemler yapılıyor. Yada 2. yol ile herhangi bir giriş yapılamksızın önceden edinilmiş bir api key ile sisteme erişilebiliyor. Bu api örneği 2. yöntemi kullanarak çalışıyor.
 
 Authentication ister get metodunda "/api/employee?api_token=d6vrU3fcTRN7hMT7BnD8oPbiEs1wJndKkTOGzdgrnbDeIbcvTQY9YnhVMejm" gibi yapılabilecekken istersekte header olarak gönderilebiliyor, "Accept" header'ı "application/json" olarak tanımlanır ve Authentication header'ı da "Bearer d6vrU3fcTRN7hMT7BnD8oPbiEs1wJndKkTOGzdgrnbDeIbcvTQY9YnhVMejm" gibi tanımlanır. Böylelikle auth. gerçekleşmiş olur.
 
